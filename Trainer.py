@@ -26,5 +26,5 @@ class Model(nn.Module):
 
 model = Model()
 
-loss = nn.CrossEntropyLoss()
+loss = nn.BCEWithLogitsLoss()
 optimiser = torch.optim.SGD(model.parameters(), lr=0.001)
