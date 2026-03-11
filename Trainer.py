@@ -13,7 +13,7 @@ class Model(nn.Module):
     super(Model, self).__init__()
     layers = []
     layers.append(nn.Flatten())
-    c = size[0] * size[1]
+    c = size[1]
     for s in range(len(layerSize) - 1):
       layers.append(nn.Linear(c, s))
       layers.append(nn.ReLU())
