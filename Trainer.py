@@ -8,6 +8,8 @@ print(data)
 print(data.size())
 size = data.size()
 
+loader = torch.utils.data.DataLoader(data, batch_size=100000, shuffle=True)
+
 class Model(nn.Module):
   def __init__(self, layerSize = [128, 64, 32, 16]):
     super(Model, self).__init__()
