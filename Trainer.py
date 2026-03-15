@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import numpy as np
 
-file = np.load('array.npy')
+file = np.load('DataTrain.npy')
 data = torch.tensor(file)
 print(data)
 print(data.size())
